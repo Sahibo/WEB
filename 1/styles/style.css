@@ -1,0 +1,40 @@
+span {
+  font-weight: bold;
+}
+
+.begin, .end {
+  text-align: center;
+}
+
+.product-img {
+  height: 100px;
+  width: 100px;
+  margin: 15px 25px 15px 25px;
+}
+
+.container {
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px;
+  border-bottom: 2px solid gainsboro;
+}
+
+.card {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  height: 180px;
+  width: 150px;
+  max-width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid gainsboro;
+}/*# sourceMappingURL=style.css.map */

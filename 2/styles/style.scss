@@ -1,0 +1,19 @@
+.menu-point {
+    display: flex;
+
+    height: 100px;
+    width: 300px;
+
+    background-color: dimgray;
+    
+
+    p {
+        display: flex;
+        align-items:center ;
+        color: white;
+    }
+}
+
+.menu-point:hover {
+    background-color: rgb(88, 88, 88);
+}

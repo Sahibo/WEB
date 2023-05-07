@@ -1,0 +1,62 @@
+a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: #ebf2ed;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  color: #ebf2ed;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0%;
+}
+
+li {
+  margin: 5px;
+}
+
+.footer {
+  height: 250px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #2a4f6e;
+}
+.footer .links {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #ebf2ed;
+}
+.footer .links .menu {
+  display: flex;
+}
+.footer .links .menu .menu-links {
+  width: 50vh;
+  justify-content: space-between;
+}
+.footer .links .menu a:hover {
+  text-decoration: underline;
+}
+.footer .links .sites {
+  display: flex;
+  align-items: center;
+}
+.footer .links .sites * {
+  margin: 10px;
+}
+.footer .links .sites .fb-icon:hover {
+  background-image: url("icons/fb.png");
+}
+.footer .links .sites .insta-icon:hover {
+  background-image: url("icons/insta.png");
+}
+.footer .links .sites .youtube-icon:hover {
+  background-image: url("icons/youtube.png");
+}
+.footer .company {
+  text-align: center;
+  margin: 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -15,6 +15,7 @@ html body .announcement-block, body body .announcement-block {
   margin: 0;
   position: fixed;
   overflow: hidden;
+  z-index: 1;
 }
 html body .announcement-block .announcement-img, body body .announcement-block .announcement-img {
   width: 100%;
@@ -28,15 +29,28 @@ html body .container, body body .container {
   width: 100%;
 }
 html body .container .side-menu, body body .container .side-menu {
-  height: 100%;
-  width: 20%;
-  margin: 36px 0 0 0;
+  height: 100vh;
+  width: 250px;
+  margin-top: 36px;
   position: fixed;
-  background-color: orangered;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #e74c3c;
+}
+html body .container .side-menu .logo-a, body body .container .side-menu .logo-a {
+  margin: 10px 0;
+  text-align: center;
+}
+html body .container .side-menu .logo-a .logo-img, body body .container .side-menu .logo-a .logo-img {
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
 }
 html body .container .main-container, body body .container .main-container {
-  margin: 36px 0 0 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 250px;
   position: relative;
 }
 html body .container .main-container .navigation, body body .container .main-container .navigation {

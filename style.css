@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url("kings_hunter.jpg");
+    background-size: cover;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(108, 116, 129, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo
+{
+    margin: 0 0 0 40px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #000;
+    transition: 0.5s;
+}
+header .logo:hover
+{
+    transform: scale(1.2);
+}
+
+header nav ul li{
+    position: relative;
+    float: left;
+}
+
+header nav ul li a{
+    padding: 15px;
+    color: black;
+    font-size: 16px;
+    display: block;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover{
+    background: black;
+    color: white;
+    transition: 0.5s;
+
+
+}
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: #fff;
+    display: none;
+
+}
+
+nav ul li:hover > ul{
+    transition: 2s;
+    display: initial;
+
+}
+
+nav ul li ul li{
+
+    width: 100%;
+    border: 1px solid rgb(0,0,0,.1);
+}
+
+nav ul li ul li ul{
+    left: 180px;
+    top: 0;
+
+}
+
+
+@media  screen and (min-width: 700px) and (max-width: 800px){
+    body{
+        height: 700px;
+        width: 200px;
+        background-image: url("hunter.jpg");
+        background-size: cover;
+
+    }
+
+    header{
+        background: #846f65;
+    }
+}

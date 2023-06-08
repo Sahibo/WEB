@@ -1,0 +1,36 @@
+span {
+  color: #FFFCF2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(125deg, #FFFCF2, #CCC5B9);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .todo-container {
+  width: 100%;
+  max-width: 540px;
+  background: #403D39;
+  position: absolute;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+.container .todo-container .todo-logo span {
+  font-size: 30px;
+  font-weight: bold;
+}
+.container .todo-container .todo-logo i {
+  margin: 10px;
+}/*# sourceMappingURL=style.css.map */

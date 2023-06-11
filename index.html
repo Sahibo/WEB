@@ -11,13 +11,26 @@
 
  <div class="container">
     <div class="todo-container">
-        <div class="todo-logo">
-            <span>To-Do List</span>
-            <i class="fa-solid fa-list" style="color: #eb5e28; font-size: 30px;"></i>
-        </div>
+      <div class="todo-logo">
+        <span>To-Do List</span>
+        <i class="fa-solid fa-list" style="color: #eb5e28; font-size: 30px;"></i>
+      </div>
+
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your task">
+        <button onclick="addTask()">Add</button>
+      </div>
+
+      <ul class="list-container" id="list-container"></ul>
+
+      <div class="buttons">
+        <button onclick="deleteCompletedTasks()">Delete completed</button>
+        <button onclick="deleteAllTasks()">Delete all</button>
+        
+      </div>
     </div>
  </div>
-
+ <script src="script.js"></script>
 </body>
 
 </html>

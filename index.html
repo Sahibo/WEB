@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <title>HW</title>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-div">
+            <div class="button-div">
+                <button type="button" id="loginBtn" class="activeBtn" onclick="loginBtnClick()">Log In</button>
+                <button type="button" id="registerBtn" class="register-btn" onclick="registerBtnClick()">Register</button>
+              </div>
+              
+    
+            <form id="login" class="input-group">
+                <input type="email" class="input-field" id="loginEmail" placeholder="Email" required>
+                <input type="password" class="input-field" id="loginPassword" placeholder="Password" required>
+                <div class="check-box-div"><input type="checkbox" class="check-box" id="loginCheckbox"><span>Remember password</span></div>
+                <button type="submit" class="submit-btn" id="submitBtn">Log In</button>
+            </form>
+
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" id="registerName" placeholder="Name" required>
+                <input type="email" class="input-field" id="registerEmail" placeholder="Email" required>
+                <input type="password" class="input-field" id="registerPassword" placeholder="Password" required>
+                <input type="password" class="input-field" id="registerConfirmPassword" placeholder="Confirm password" required>
+                <button type="submit" class="submit-btn" id="registerConfirmBtn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

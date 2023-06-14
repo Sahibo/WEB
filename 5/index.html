@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список книг</title>
+    <style>
+        .book {
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #fff;
+            cursor: pointer;
+        
+        }
+        
+        .book:hover {
+            background-color: rgb(255, 241, 173);
+        }
+        
+        .book.selected {
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="book" onclick="selectBook(event)">Knigga 1</div>
+    <div class="book" onclick="selectBook(event)">Knigga 2</div>
+    <div class="book" onclick="selectBook(event)">Knigga 3</div>
+    <div class="book" onclick="selectBook(event)">Knigga 4</div>
+</body>
+    <script>
+        function selectBook(event) {
+            var selectedBooks = document.getElementsByClassName("selected");
+            
+            if (selectedBooks.length > 0) {
+                selectedBooks[0].classList.remove("selected");
+            }
+            
+            event.target.classList.add("selected");
+        }
+    </script>
+</html>

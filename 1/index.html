@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HW1</title>
+</head>
+<body>
+    <label for="username">Enter your name:</label>
+    <input type="text" id="username" onkeypress="checkInput(event)">
+</body>
+<script>
+    function checkInput(event) {
+        var charCode = event.which || event.keyCode;
+        
+        if (charCode >= 48 && charCode <= 57)
+            event.preventDefault();
+    }
+</script>
+</html>

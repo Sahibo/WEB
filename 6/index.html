@@ -3,62 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-
-    <style>
-        html {
-            height: 100vh;
-        }
-        .tooltip {
-            position: relative;
-            display: inline-block;
-        }
-
-        .
-        
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            text-align: center;
-            border-radius: 5px;
-            padding: 5px;
-            position: absolute;
-            z-index: 1;
-            transition: visibility 0.3s;
-        }
-        
-        .tooltip .tooltiptext.top {
-            bottom: 100%; /* Display above the button */
-        }
-        
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-        }
-    </style>
 </head>
 <body>
-    <div class="tooltip firstr">
-        <button onmouseover="showTooltip(event)" onmouseout="hideTooltip(event)">Кнопка 1</button>
-        <span class="tooltiptext">Подсказка для кнопки 1</span>
+    <div class="hover-text">hover me
+        <span class="tooltip-text">I'm a tooltip!</span>
     </div>
-    
-    <div class="tooltip">
-        <button onmouseover="showTooltip(event)" onmouseout="hideTooltip(event)">Кнопка 2</button>
-        <span class="tooltiptext">Подсказка для кнопки 2</span>
-    </div>
-    
-    <div class="tooltip">
-        <button onmouseover="showTooltip(event)" onmouseout="hideTooltip(event)">Кнопка 3</button>
-        <span class="tooltiptext">Подсказка для кнопки 3</span>
-    </div>
-    
-    <div class="tooltip">
-        <button onmouseover="showTooltip(event)" onmouseout="hideTooltip(event)">Кнопка 4</button>
-        <span class="tooltiptext">Подсказка для кнопки 4</span>
-    </div>
-</body>
-    <script>
 
-    </script>
+    <div class="hover-text">hover me
+        <span class="tooltip-text">I'm a tooltip!</span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
 </html>

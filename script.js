@@ -23,30 +23,66 @@ function registerBtnClick() {
 
 
 
-//Registration logic
-document.getElementById('register').addEventListener('registerConfirmBtn', function(event) {
-    event.preventDefault(); // Отменяем отправку формы по умолчанию
-  
-    // Получаем значения полей формы
-    var username = document.getElementById('registerName').value;
-    var email = document.getElementById('registerEmail').value;
-    var password = document.getElementById('registrationPassword').value;
-    //var confirmPassword = document.getElementById('registerConfirmPassword').value;
-  
-    // Создаем объект пользователя
-    var user = {
-      username: username,
-      email: email,
-      password: password
-    };
-  
-    // Сохраняем объект пользователя в файле .json
-    saveUser(user);
-    
-  });
-
-
-  function saveUser(user) {
-    let result = JSON.stringify(user)
-    login.style.background = "black";
+//User
+class User {
+  constructor(username, password, email) {
+      this.username = username;
+      this.password = password;
+      this.email = email;
   }
+}
+
+//Registartion
+document.getElementById("register").addEventListener("registerConfirmBtn",function(){
+  const username = document.getElementById("registerName").value
+  const password = document.getElementById('registrationPassword').value;
+  //const confirmPassword = document.getElementById('registerConfirmPassword').value;
+  const email = document.getElementById('registerEmail').value;
+
+  var users = [];
+  if (localStorage.getItem("users")) {
+      users = JSON.parse(localStorage.getItem("users"));
+  }
+
+  const user = users.find(u => u.username === username );
+  
+  if (user) {
+      alert("This username was already taken");
+  }
+  else {
+      const newUser = new User(username, password, email);
+      if (localStorage.getItem("users")) {
+          users = JSON.parse(localStorage.getItem("users"));
+      }
+      users.push(newUser);
+      document.getElementById("registerName").value = "";
+      document.getElementById("registrationPassword").value = "";
+      localStorage.setItem("users", JSON.stringify(users));
+
+      prompt("Success");
+  }
+
+})
+
+
+//Login
+document.getElementById("login").addEventListener("LoginConfirmBtn", function() {
+  const username = document.getElementById("registerName").value
+  const password = document.getElementById("registrationPassword").value
+
+  let users = [];
+
+  if (localStorage.getItem("users")) {
+      users = JSON.parse(localStorage.getItem("users"));
+  }
+
+  const user = users.find(u => u.username === username && u.password === password);
+
+  if (user) {
+    prompt("Success");
+  } else {
+    prompt("Wrong username or password");
+  }
+  document.getElementById("registerName").value = "";
+  document.getElementById("registrationPassword").value = "";
+});

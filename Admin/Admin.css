@@ -1,0 +1,53 @@
+div {
+    background-color: rgb(243, 236, 229);
+    border: 1px solid rgb(255, 180, 180);
+    display: block;
+}
+
+ul {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs-container {
+    border-bottom: 1px solid #eaebf2;
+}
+
+.breadcrumbs-inner {
+    width: 970px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs-link {
+    color: #212c3a;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 16px 10px;
+    text-decoration: underline;
+    transition: color ease 0.2s;
+}
+
+.breadcrumbs-link:hover{
+    color: #1e6e9d;
+}
